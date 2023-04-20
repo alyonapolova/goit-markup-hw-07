@@ -30,6 +30,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 .link {
   text-decoration: none;
@@ -57,14 +58,10 @@ img {
   cursor: pointer;
 }
 .container {
-  width: 1158px;
+  max-width: 458px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 /** -----------------------HEADER---------------------- */
@@ -190,29 +187,39 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/more_bg.jpg);
+    url(../images/hero-bg-mob.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 1440px;
+  padding: 112px 54px;
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .more {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-mob2x.jpeg);
+  }
 }
 
 .more-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  max-width: 496px;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  max-width: 320px;
   color: var(--white);
 }
+
 .more-btn {
-  margin-top: 48px;
+  margin-top: 72px;
   color: #ffffff;
   background-color: var(--logo-effect);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -230,68 +237,54 @@ img {
 }
 
 /** -----------------------BENEFITS---------------------- */
+.benefits-item-svg {
+  display: none;
+}
 .benefits {
   background-color: var(--white);
+  padding: 96px 16px;
 }
-
-.benefits-list {
-  display: flex;
-  gap: 24px;
-}
-
 .benefits-item {
-  width: calc((100%-72px) / 4);
-}
-
-.benefits-bg {
-  display: flex;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 72px;
 }
 
 .benefits-title {
   margin-top: 8px;
   margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
 }
 .benefits-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
+
 /** -----------------------CONTENT---------------------- */
 .content {
-  padding-bottom: 120px;
-  background-color: var(--white);
-}
-.content-list {
-  display: flex;
-  gap: 24px;
-  margin-top: 72px;
-}
-.content-item {
-  width: calc((100%-48px) / 3);
-}
-.content-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--main-title-color);
+  display: none;
 }
 /** -----------------------TEAM---------------------- */
 .team {
   background-color: #f4f4fd;
+  padding: 96px 82px;
+}
+.team-container {
+  padding: 0;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 72px;
 }
 .team-title {
   text-align: center;
@@ -300,23 +293,19 @@ img {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-
   text-transform: capitalize;
   color: var(--main-title-color);
 }
-.team-list {
-  display: flex;
-  gap: 24px;
-  text-align: center;
-}
+
 .team-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
   padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
   background-color: var(--white);
+  text-align: center;
 }
 .team-item > img {
   margin-bottom: 32px;
@@ -366,8 +355,7 @@ img {
 
 /** -----------------------CUSTOMERS---------------------- */
 .customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 96px;
   background-color: var(--white);
 }
 
@@ -384,11 +372,14 @@ img {
 
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+  row-gap: 72px;
 }
 
 .customer-item {
-  width: 188px;
+  display: block;
+  width: 190px;
   height: 88px;
 }
 

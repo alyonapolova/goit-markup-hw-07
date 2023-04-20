@@ -1,0 +1,336 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .more {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tab.jpeg);
+    padding: 112px 136px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .more {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tab2x.jpeg);
+    }
+  }
+  .more-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+  .more-btn {
+    margin-top: 36px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .more {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-desk.jpeg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .more {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-desk2x.jpeg);
+    }
+  }
+  .more-title {
+    max-width: 496px;
+  }
+  .more-btn {
+    margin-top: 48px;
+  }
+}
+
+/*Benefits*/
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+    justify-content: center;
+  }
+  .benefits-container {
+    padding: 0;
+  }
+  .benefits-item {
+    flex-basis: calc((100% - 48px) / 2);
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding: 120px 156px;
+  }
+
+  .benefits-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .benefits-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .benefits-bg {
+    display: flex;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .benefits-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .benefits-text {
+    font-weight: 400;
+  }
+  .benefits-item-svg {
+    display: block;
+  }
+}
+/*CONTENT*/
+@media screen and (min-width: 1200px) {
+  .content {
+    display: block;
+    padding-bottom: 120px;
+    background-color: var(--white);
+  }
+  .content-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 72px;
+  }
+  .content-item {
+    width: calc((100%-48px) / 3);
+  }
+  .content-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--main-title-color);
+  }
+}
+
+/*Team*/
+@media screen and (min-width: 768px) {
+  .team {
+    padding: 96px 108px;
+  }
+  .team-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 64px;
+  }
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    gap: 24px;
+  }
+  .team-item {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+/*Customers*/
+@media screen and (min-width: 768px) {
+  .customer-item {
+    width: calc((100% - 24px * 2) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .customers-list {
+    gap: 24px;
+  }
+
+  .customer-item {
+    width: calc((100% - 24px * 5) / 6);
+  }
+}
+
+/*Footer*/
+@media screen and (min-width: 1200px) {
+  .footer {
+    background-color: var(--main-title-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-effect);
+  }
+  .footer-studio {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f4f4fd;
+  }
+  .footer-text {
+    margin-top: 16px;
+    max-width: 264px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+  }
+
+  .footer-flex {
+    display: flex;
+  }
+  .footer-right {
+    margin-left: 120px;
+  }
+  .footer-soc-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+    color: var(--white);
+  }
+
+  .footer-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  .footer-item {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-soc-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--logo-effect);
+    align-items: center;
+    justify-content: center;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .footer-soc-link:is(:hover, :focus) {
+    background-color: #31d0aa;
+  }
+
+  /*Footer form*/
+  .footer-subscribe {
+    margin-left: 80px;
+  }
+  .foorter-form {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .footer-form-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+
+    color: var(--white);
+  }
+  .footer-input {
+    padding: 8px 16px;
+    border: 1px solid #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    background-color: inherit;
+    outline: transparent;
+    color: var(--white);
+  }
+
+  .footer-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+
+    letter-spacing: 0.04em;
+
+    color: var(--white);
+  }
+  .footer-btn {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    min-width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    border-color: transparent;
+    background-color: var(--logo-effect);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.04em;
+
+    color: var(--white);
+  }
+  .subscribe-icon {
+    margin-left: 16px;
+  }
+}
