@@ -79,7 +79,7 @@ img {
 }
 .header-logo {
   display: block;
-  margin-right: 76px;
+  margin-right: auto;
   padding-top: 24px;
   padding-bottom: 24px;
   font-family: 'Raleway', sans-serif;
@@ -162,8 +162,7 @@ img {
 
 .header-address-item {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 0;
 
   font-weight: 400;
   font-size: 16px;
@@ -193,6 +192,31 @@ img {
 .mob-icon {
   display: flex;
   stroke: var(--main-title-color);
+}
+
+.btn-menu-close {
+  position: absolute;
+  padding: 8px;
+  top: 24px;
+  right: 24px;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  cursor: pointer;
+  fill: var(--main-title-color);
+
+  transition-property: background-color, fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-menu-close:is(:hover, :focus) {
+  background-color: var(--hover-color);
+  fill: var(--white);
+  border-color: transparent;
+}
+.close-icon-mob {
+  display: block;
 }
 
 .mob-menu {
@@ -262,7 +286,7 @@ img {
 .mob-soc-list {
   display: flex;
   gap: 56px;
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 .mob-soc-link {
@@ -343,6 +367,8 @@ img {
 .benefits-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   row-gap: 72px;
 }
 
@@ -353,6 +379,7 @@ img {
 }
 
 .benefits-title {
+  text-align: center;
   margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 700;
@@ -785,8 +812,8 @@ img {
 
 .modal {
   position: absolute;
-  padding: 72px 24px 24px;
-  width: 408px;
+  padding: 72px 16px 24px;
+  width: 392px;
   min-height: 584px;
 
   top: 50%;
