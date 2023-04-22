@@ -100,7 +100,7 @@ img {
   color: var(--main-title-color);
 }
 .header-list {
-  display: flex;
+  display: none;
   gap: 40px;
 }
 
@@ -152,7 +152,7 @@ img {
 }
 
 .header-address-list {
-  display: flex;
+  display: none;
   gap: 40px;
 }
 .header-address {
@@ -177,6 +177,105 @@ img {
 }
 .header-address-item:is(:hover, :focus) {
   color: var(--hover-color);
+}
+/*Mobile menu*/
+
+.menu-open-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: transparent;
+  background-color: inherit;
+  min-width: 32px;
+  height: 22px;
+  margin-left: auto;
+}
+.mob-icon {
+  display: flex;
+  stroke: var(--main-title-color);
+}
+
+.mob-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  padding: 80px 40px 40px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white);
+}
+
+.mob-link {
+  display: block;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: var(--main-title-color);
+}
+.mob-link.mob-link:nth-last-child {
+  margin-bottom: 0;
+}
+.mob-link:is(:hover, :focus) {
+  color: var(--hover-color);
+}
+
+.mob-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.mob-tel {
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+
+  letter-spacing: 0.02em;
+
+  color: var(--main-text-color);
+}
+.mob-tel:is(:hover, :focus) {
+  color: var(--logo-effect);
+}
+
+.mob-mail {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+
+  color: var(--main-text-color);
+}
+.mob-mail:is(:hover, :focus) {
+  color: var(--logo-effect);
+}
+.mob-soc-list {
+  display: flex;
+  gap: 56px;
+  margin-top: 40px;
+}
+
+.mob-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--logo-effect);
+}
+.mob-soc-link:is(:hover, :focus) {
+  background-color: var(--hover-color);
 }
 
 /** -----------------------MORE---------------------- */
