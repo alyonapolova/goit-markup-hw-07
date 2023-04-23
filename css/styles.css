@@ -30,6 +30,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 .link {
   text-decoration: none;
@@ -193,6 +194,9 @@ img {
   display: flex;
   stroke: var(--main-title-color);
 }
+.mob-link.current {
+  color: var(--hover-color);
+}
 
 .btn-menu-close {
   position: absolute;
@@ -231,10 +235,15 @@ img {
   height: 100vh;
   background-color: var(--white);
 }
+.mob-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 
 .mob-link {
   display: block;
-  margin-bottom: 40px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -255,6 +264,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  font-style: normal;
 }
 .mob-tel {
   display: block;
@@ -264,9 +274,6 @@ img {
 
   letter-spacing: 0.02em;
 
-  color: var(--main-text-color);
-}
-.mob-tel:is(:hover, :focus) {
   color: var(--logo-effect);
 }
 
@@ -380,7 +387,6 @@ img {
 
 .benefits-title {
   text-align: center;
-  margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 36px;
@@ -575,6 +581,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  text-align: left;
 }
 
 .footer-flex {
