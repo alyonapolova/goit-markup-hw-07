@@ -352,3 +352,117 @@
     padding: 72px 24px 24px;
   }
 }
+
+/*Portfolio*/
+@media screen and (min-width: 768px) {
+  .menu {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+
+  .menu-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+
+  .menu-btn {
+    color: var(--logo-effect);
+    background-color: #f4f4fd;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+    padding: 12px 24px;
+
+    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-btn:is(:hover, :focus) {
+    background-color: var(--hover-color);
+    color: var(--white);
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  /** -----------------------WORKS-PORTFOLIO---------------------- */
+  .works-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px 24px;
+  }
+
+  .works-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .works-item.works-item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .works-div {
+    padding-left: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-right: 1px solid #e7e9fc;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+  }
+
+  .works-link {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .works-link:is(:hover, :focus) {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  .works-title {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+  }
+  .works-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+  }
+
+  .works-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .works-card-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 32px 164px 32px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background-color: var(--logo-effect);
+    transform: translateY(100%);
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .works-link:hover .works-card-text {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
