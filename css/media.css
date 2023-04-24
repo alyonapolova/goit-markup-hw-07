@@ -311,6 +311,7 @@
 
     align-items: flex-start;
   }
+  .footer-input{width: 264px;}
   .footer-btn {
     margin: 0;
   }
