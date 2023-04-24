@@ -362,29 +362,30 @@
 
   .menu-list {
     flex-wrap: nowrap;
-    gap: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 586px;
+    align-items: center;
     justify-content: center;
+    gap: 24px;
     margin-bottom: 64px;
   }
 
   .menu-btn {
+    white-space: nowrap;
     padding: 12px 24px;
   }
 
-  /** -----------------------WORKS-PORTFOLIO---------------------- */
   .works-list {
     flex-direction: row;
     flex-wrap: wrap;
-
     gap: 72px 24px;
   }
 
   .works-item {
-    width: calc((100% - 48px) / 2);
+    width: calc((100% - 24px) / 2);
   }
-  .works-item.works-item:nth-child(3n) {
-    margin-right: 0;
-  }
+
   .works-div {
     padding-left: 16px;
     padding-top: 32px;
@@ -450,4 +451,13 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .menu {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .menu-list {
+    margin-bottom: 72px;
+    gap: 48px 24px;
+  }
+  .works-item{width: calc((100% - 48px)/3);
 }

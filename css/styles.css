@@ -707,8 +707,9 @@ img {
 .menu-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px 24px;
+  gap: 24px 16px;
   margin-bottom: 48px;
+  max-width: 263px;
 }
 
 .menu-btn {
